@@ -45,7 +45,7 @@ header{
 	text-align: center;
 
 	/* Sets the font family for the body*/
-	font-family: 'Pllayfair Display', sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 
 }
 
@@ -59,6 +59,9 @@ header h1{
  
 	/* Left-aligns the text */
 	text-align: left;
+	
+	color:#2A4B7C;
+	
 }
 
 header h2, h3{
@@ -67,13 +70,15 @@ header h2, h3{
 	max-width: 750px;
 
 	/*Sets a smaller font size for h2s in the header section */
-	font-size: 18px;
+	font-size: 20px;
 
 	/* Uses the margin trick to center */
 	margin: 10px auto;
 
 	/* Left-aligns the text */
 	text-align: left;
+	
+	color: #2A4B7C;
 }
 
 header h3 {
@@ -81,6 +86,48 @@ header h3 {
 	/*Sets a smaller font size for h3s in the header section */
 	font-size: 14px;
 
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* Top left text over images */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #FFFFFF;
+	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+}
+
+/* Top right text over images */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: #FFFFFF;
+	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+}
+
+/* Bottom right text over images */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: #FFFFFF;
+	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+}
+
+/* Bottom left text over images */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: #FFFFFF;
+	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
 }
 
  /* Styles for the banner image and caption */
@@ -155,7 +202,7 @@ section.last{
 
 #topHeader {
 	color: #FFFFFF;
-	background-image: linear-gradient(to right, #4A4E69, #9ABC98);
+	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
 }
 
 .firstCap{
