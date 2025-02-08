@@ -12,8 +12,32 @@ p, section{
  	/* Automatically resizes the images to fit the window width */
  	max-width: 100%;
  	height: auto;
+ 	border-radius: 10%;
  }
 
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -35,7 +59,7 @@ a:hover{
  body{
 
  	/* Sets the font family for the body*/
-	font-family: 'Playfair Display', sans-serif;
+	font-family: "Arvo", sans-serif;
  }
 
 /* Header styles */
@@ -45,7 +69,7 @@ header{
 	text-align: center;
 
 	/* Sets the font family for the body*/
-	font-family: 'Playfair Display', sans-serif;
+	font-family: "Arvo", sans-serif;
 
 }
 
@@ -55,13 +79,10 @@ header h1{
 	max-width: 760px;
 
 	/* Uses the margin trick to center */
-	margin: 10px auto;
+	margin: 20px auto;
  
 	/* Left-aligns the text */
 	text-align: left;
-	
-	color:#2A4B7C;
-	
 }
 
 header h2, h3{
@@ -70,15 +91,13 @@ header h2, h3{
 	max-width: 750px;
 
 	/*Sets a smaller font size for h2s in the header section */
-	font-size: 20px;
+	font-size: 18px;
 
 	/* Uses the margin trick to center */
 	margin: 10px auto;
 
 	/* Left-aligns the text */
 	text-align: left;
-	
-	color: #2A4B7C;
 }
 
 header h3 {
@@ -88,49 +107,66 @@ header h3 {
 
 }
 
-/* Container holding the image and the text */
 .container {
   position: relative;
   text-align: center;
+
 }
 
 /* Top left text over images */
 .top-left {
+	font-family: "Arvo";
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #FFFFFF;
-	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+  color: #000000;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px #FFFFFF;
 }
 
 /* Top right text over images */
 .top-right {
+	font-family: "Arvo";
   position: absolute;
   top: 8px;
   right: 16px;
   color: #FFFFFF;
-	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000
 }
 
 /* Bottom right text over images */
 .bottom-right {
+	font-family: "Arvo";
   position: absolute;
   bottom: 8px;
   right: 16px;
   color: #FFFFFF;
-	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+	font-size: 50px;
+  text-shadow: 2px 2px 4px #000000
 }
 
 /* Bottom left text over images */
 .bottom-left {
+	font-family: "Arvo";
   position: absolute;
   bottom: 8px;
   left: 16px;
   color: #FFFFFF;
-	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000
 }
+table {
+		/* Limits the width of the headline so that it's more readable */
+	max-width: 760px;
 
- /* Styles for the banner image and caption */
+	/* Uses the margin trick to center */
+	margin: 10px auto;
+ 
+	/* Left-aligns the text */
+
+}
+ 
 figure.banner{
 
  	/* This display allows the figcaption to align with the image */
@@ -202,7 +238,7 @@ section.last{
 
 #topHeader {
 	color: #FFFFFF;
-	background-image: linear-gradient(to right, #b5b69c, #2A4B7C);
+	background-image: linear-gradient(to right, #eceff4, #9B1B30);
 }
 
 .firstCap{
